@@ -1,9 +1,11 @@
-soma = 0
+contador= 0
+total_notas=0 
+notas= int (input("insira suas notas, uma por uma para que seja realizada a media:  "))
+while notas != -1:
+    contador+=1
+    total_notas +=notas
+    notas= int(input(""))
 
-n= int(input("digite um numero: "))
-
-while n != 0:
-    soma+=n
-    n= int(input("digite um numero: "))
-
-    print(f"a soma de todos os numeros e de: {soma}.")
+    media= total_notas/ contador
+        
+    print("sua media: {}".format(media))

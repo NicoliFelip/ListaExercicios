@@ -1,7 +1,4 @@
-num= 2
-soma=0
-while num<= 100:
-    soma+=num
-    num+=2
-print(soma)
-
+while True:
+    number= int(input("insira um numero de 0 a 10:  "))
+    while number <0 and number>10:
+        number= int(input("insira um numero de 0 a 10:  "))

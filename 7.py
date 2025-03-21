@@ -1,6 +1,19 @@
-num_secreto= 8
-tentativa= int(input("tentativa de adivinhar o numero secreto de 1 a 10:  "))
-while tentativa != num_secreto:
-    tentativa= int(input("tentativa de adivinhar o numero secreto de 1 a 10"))
+paisA = 80000
 
-    print(f"numero correto! resposta {num_secreto}")
+paisB = 200000
+
+qtdAnos = 0
+
+while paisB > paisA :
+
+ populacaoPaisA = paisA * 0.03
+
+ populacaoPaisB = paisB * 0.015
+
+ paisA = paisA + populacaoPaisA
+
+ paisB = paisB + populacaoPaisB
+
+ qtdAnos = qtdAnos + 1
+
+print("O país A passará o país B em",qtdAnos,"anos")
